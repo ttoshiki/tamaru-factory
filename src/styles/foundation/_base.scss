@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $--font-size-md;
+}
+
+body {
+  margin: 0;
+  font-family: $--font-family-ja;
+  font-size: $--font-size-md;
+  line-height: $--line-height-xs;
+  color: $--color-dark;
+  background-color: $--color-dark;
+}
+
+strong {
+  font-weight: $--font-weight-bd;
+}

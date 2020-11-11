@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "stylelint-config-recommended-scss",
+    "stylelint-config-recess-order",
+    "stylelint-prettier/recommended"
+  ],
+  "rules": {
+    "color-hex-length": "long",
+    "block-no-empty": null
+  }
+}
