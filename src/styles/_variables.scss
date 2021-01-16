@@ -5,148 +5,147 @@
 // 512 384 312 256 192 144 128 96 72 64 56 40 32 24 16 12 6 2
 
 // Spacing Rule
-$--spacing-1x: 2px;
-$--spacing-2x: 6px;
-$--spacing-3x: 12px;
-$--spacing-4x: 16px;
-$--spacing-6x: 24px;
-$--spacing-8x: 32px;
-$--spacing-10x: 40px;
-$--spacing-12x: 48px;
-$--spacing-16x: 64px;
-$--spacing-32x: 128px;
+$spacing-1x: 2px;
+$spacing-2x: 6px;
+$spacing-3x: 12px;
+$spacing-4x: 16px;
+$spacing-6x: 24px;
+$spacing-8x: 32px;
+$spacing-10x: 40px;
+$spacing-12x: 48px;
+$spacing-16x: 64px;
+$spacing-32x: 128px;
 
 // Font Rule
-$--line-height-none: 1;
-$--line-height-xs: 1.2;
-$--line-height-sm: 1.4;
-$--line-height-md: 1.6;
-$--line-height-lg: 2;
-$--line-height-xl: 2.2;
-$--line-height-xxl: 2.6;
+$line-height-none: 1;
+$line-height-xs: 1.2;
+$line-height-sm: 1.4;
+$line-height-md: 1.6;
+$line-height-lg: 2;
+$line-height-xl: 2.2;
+$line-height-xxl: 2.6;
 
-$--font-size-xs: 10px;
-$--font-size-sm: 12px;
-$--font-size-md: 16px; // 本文基本サイズ
-$--font-size-lg: 18px;
-$--font-size-xl: 24px;
-$--font-size-h3: 32px;
-$--font-size-h2: 40px; // 見出しサイズ
-$--font-size-h1: 48px;
+$font-size-xs: 10px;
+$font-size-sm: 12px;
+$font-size-md: 16px; // 本文基本サイズ
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+$font-size-h3: 32px;
+$font-size-h2: 40px; // 見出しサイズ
+$font-size-h1: 48px;
 
-$--font-weight-md: 400;
-$--font-weight-bd: 600;
+$font-weight-md: 400;
+$font-weight-bd: 600;
 
-$--font-family-ja: system-ui, -apple-system, BlinkMacSystemFont,
-  "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
-  "ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS PGothic",
-  Osaka, sans-serif;
-$--font-family-en: "Poppins", sans-serif;
+$font-family-ja: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+  "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo,
+  "メイリオ", "ＭＳ Ｐゴシック", "MS PGothic", Osaka, sans-serif;
+$font-family-en: "Poppins", sans-serif;
 
 // Color Rule
-$--color-primary-100: #12ec91;
-$--color-primary-090: rgba($--color-primary-100, 0.9);
-$--color-primary-080: rgba($--color-primary-100, 0.8);
-$--color-primary-070: rgba($--color-primary-100, 0.7);
-$--color-primary-060: rgba($--color-primary-100, 0.6);
-$--color-primary-050: rgba($--color-primary-100, 0.5);
-$--color-primary-040: rgba($--color-primary-100, 0.4);
-$--color-primary-030: rgba($--color-primary-100, 0.3);
-$--color-primary-020: rgba($--color-primary-100, 0.2);
-$--color-primary-010: rgba($--color-primary-100, 0.1);
+$color-primary-100: #12ec91;
+$color-primary-090: rgba($color-primary-100, 0.9);
+$color-primary-080: rgba($color-primary-100, 0.8);
+$color-primary-070: rgba($color-primary-100, 0.7);
+$color-primary-060: rgba($color-primary-100, 0.6);
+$color-primary-050: rgba($color-primary-100, 0.5);
+$color-primary-040: rgba($color-primary-100, 0.4);
+$color-primary-030: rgba($color-primary-100, 0.3);
+$color-primary-020: rgba($color-primary-100, 0.2);
+$color-primary-010: rgba($color-primary-100, 0.1);
 
-$--color-primary-tint-100: #5cebaf;
-$--color-primary-tint-090: rgba($--color-primary-tint-100, 0.9);
-$--color-primary-tint-080: rgba($--color-primary-tint-100, 0.8);
-$--color-primary-tint-070: rgba($--color-primary-tint-100, 0.7);
-$--color-primary-tint-060: rgba($--color-primary-tint-100, 0.6);
-$--color-primary-tint-050: rgba($--color-primary-tint-100, 0.5);
-$--color-primary-tint-040: rgba($--color-primary-tint-100, 0.4);
-$--color-primary-tint-030: rgba($--color-primary-tint-100, 0.3);
-$--color-primary-tint-020: rgba($--color-primary-tint-100, 0.2);
-$--color-primary-tint-010: rgba($--color-primary-tint-100, 0.1);
+$color-primary-tint-100: #5cebaf;
+$color-primary-tint-090: rgba($color-primary-tint-100, 0.9);
+$color-primary-tint-080: rgba($color-primary-tint-100, 0.8);
+$color-primary-tint-070: rgba($color-primary-tint-100, 0.7);
+$color-primary-tint-060: rgba($color-primary-tint-100, 0.6);
+$color-primary-tint-050: rgba($color-primary-tint-100, 0.5);
+$color-primary-tint-040: rgba($color-primary-tint-100, 0.4);
+$color-primary-tint-030: rgba($color-primary-tint-100, 0.3);
+$color-primary-tint-020: rgba($color-primary-tint-100, 0.2);
+$color-primary-tint-010: rgba($color-primary-tint-100, 0.1);
 
-$--color-primary-shade-100: #08c475;
-$--color-primary-shade-090: rgba($--color-primary-shade-100, 0.9);
-$--color-primary-shade-080: rgba($--color-primary-shade-100, 0.8);
-$--color-primary-shade-070: rgba($--color-primary-shade-100, 0.7);
-$--color-primary-shade-060: rgba($--color-primary-shade-100, 0.6);
-$--color-primary-shade-050: rgba($--color-primary-shade-100, 0.5);
-$--color-primary-shade-040: rgba($--color-primary-shade-100, 0.4);
-$--color-primary-shade-030: rgba($--color-primary-shade-100, 0.3);
-$--color-primary-shade-020: rgba($--color-primary-shade-100, 0.2);
-$--color-primary-shade-010: rgba($--color-primary-shade-100, 0.1);
+$color-primary-shade-100: #08c475;
+$color-primary-shade-090: rgba($color-primary-shade-100, 0.9);
+$color-primary-shade-080: rgba($color-primary-shade-100, 0.8);
+$color-primary-shade-070: rgba($color-primary-shade-100, 0.7);
+$color-primary-shade-060: rgba($color-primary-shade-100, 0.6);
+$color-primary-shade-050: rgba($color-primary-shade-100, 0.5);
+$color-primary-shade-040: rgba($color-primary-shade-100, 0.4);
+$color-primary-shade-030: rgba($color-primary-shade-100, 0.3);
+$color-primary-shade-020: rgba($color-primary-shade-100, 0.2);
+$color-primary-shade-010: rgba($color-primary-shade-100, 0.1);
 
-$--color-attention-100: #db162d;
-$--color-attention-090: rgba($--color-attention-100, 0.9);
-$--color-attention-080: rgba($--color-attention-100, 0.8);
-$--color-attention-070: rgba($--color-attention-100, 0.7);
-$--color-attention-060: rgba($--color-attention-100, 0.6);
-$--color-attention-050: rgba($--color-attention-100, 0.5);
-$--color-attention-040: rgba($--color-attention-100, 0.4);
-$--color-attention-030: rgba($--color-attention-100, 0.3);
-$--color-attention-020: rgba($--color-attention-100, 0.2);
-$--color-attention-010: rgba($--color-attention-100, 0.1);
+$color-attention-100: #db162d;
+$color-attention-090: rgba($color-attention-100, 0.9);
+$color-attention-080: rgba($color-attention-100, 0.8);
+$color-attention-070: rgba($color-attention-100, 0.7);
+$color-attention-060: rgba($color-attention-100, 0.6);
+$color-attention-050: rgba($color-attention-100, 0.5);
+$color-attention-040: rgba($color-attention-100, 0.4);
+$color-attention-030: rgba($color-attention-100, 0.3);
+$color-attention-020: rgba($color-attention-100, 0.2);
+$color-attention-010: rgba($color-attention-100, 0.1);
 
-$--color-grayscale-100: #171718;
-$--color-grayscale-090: #2e2e34;
-$--color-grayscale-080: #45454b;
-$--color-grayscale-070: #5d5d63;
-$--color-grayscale-060: #74747a;
-$--color-grayscale-050: #8f8f94;
-$--color-grayscale-040: #ababaf;
-$--color-grayscale-030: #c7c7c9;
-$--color-grayscale-020: #e3e3e4;
-$--color-grayscale-010: #f1f1f1;
+$color-grayscale-100: #171718;
+$color-grayscale-090: #2e2e34;
+$color-grayscale-080: #45454b;
+$color-grayscale-070: #5d5d63;
+$color-grayscale-060: #74747a;
+$color-grayscale-050: #8f8f94;
+$color-grayscale-040: #ababaf;
+$color-grayscale-030: #c7c7c9;
+$color-grayscale-020: #e3e3e4;
+$color-grayscale-010: #f1f1f1;
 
-$--color-black-100: #000000;
-$--color-black-090: rgba($--color-black-100, 0.9);
-$--color-black-080: rgba($--color-black-100, 0.8);
-$--color-black-070: rgba($--color-black-100, 0.7);
-$--color-black-060: rgba($--color-black-100, 0.6);
-$--color-black-050: rgba($--color-black-100, 0.5);
-$--color-black-040: rgba($--color-black-100, 0.4);
-$--color-black-030: rgba($--color-black-100, 0.3);
-$--color-black-020: rgba($--color-black-100, 0.2);
-$--color-black-010: rgba($--color-black-100, 0.1);
+$color-dark-100: #000000;
+$color-dark-090: #141414;
+$color-dark-080: #1f1f1f;
+$color-dark-070: #333333;
+$color-dark-060: #545454;
+$color-dark-050: #757575;
+$color-dark-040: #afafaf;
+$color-dark-030: #cbcbcb;
+$color-dark-020: #e2e2e2;
+$color-dark-010: #eeeeee;
 
-$--color-white-100: #ffffff;
-$--color-white-090: rgba($--color-white-100, 0.9);
-$--color-white-080: rgba($--color-white-100, 0.8);
-$--color-white-070: rgba($--color-white-100, 0.7);
-$--color-white-060: rgba($--color-white-100, 0.6);
-$--color-white-050: rgba($--color-white-100, 0.5);
-$--color-white-040: rgba($--color-white-100, 0.4);
-$--color-white-030: rgba($--color-white-100, 0.3);
-$--color-white-020: rgba($--color-white-100, 0.2);
-$--color-white-010: rgba($--color-white-100, 0.1);
+$color-white-100: #ffffff;
+$color-white-090: rgba($color-white-100, 0.9);
+$color-white-080: rgba($color-white-100, 0.8);
+$color-white-070: rgba($color-white-100, 0.7);
+$color-white-060: rgba($color-white-100, 0.6);
+$color-white-050: rgba($color-white-100, 0.5);
+$color-white-040: rgba($color-white-100, 0.4);
+$color-white-030: rgba($color-white-100, 0.3);
+$color-white-020: rgba($color-white-100, 0.2);
+$color-white-010: rgba($color-white-100, 0.1);
 
 // Radius Rule
-$--radius-round: 50%;
-$--radius-pill: 99em;
-$--radius-sm: 2px;
-$--radius-md: 4px;
-$--radius-lg: 8px;
-$--radius-xl: 10px;
-$--radius-xxl: 28px;
+$radius-round: 50%;
+$radius-pill: 99em;
+$radius-sm: 2px;
+$radius-md: 4px;
+$radius-lg: 8px;
+$radius-xl: 10px;
+$radius-xxl: 28px;
 
 // z-index Rule
-$--z-index-xl: 10000;
-$--z-index-lg: 1000;
-$--z-index-md: 100;
-$--z-index-sm: 10;
-$--z-index-xs: 1;
+$z-index-xl: 10000;
+$z-index-lg: 1000;
+$z-index-md: 100;
+$z-index-sm: 10;
+$z-index-xs: 1;
 
 // BreakPoint Rule
-$--breakpoint-xs: 320px !default;
-$--breakpoint-sm: 640px !default;
-$--breakpoint-md: 768px !default;
-$--breakpoint-lg: 1024px !default;
-$--breakpoint-xl: 1280px !default;
+$breakpoint-xs: 320px !default;
+$breakpoint-sm: 640px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 1024px !default;
+$breakpoint-xl: 1280px !default;
 
 $breakpoints: (
-  "mobile": "screen and (max-width: #{$--breakpoint-sm - 1px})",
-  "pc": "screen and (min-width: #{$--breakpoint-sm})",
+  "mobile": "screen and (max-width: #{$breakpoint-sm - 1px})",
+  "pc": "screen and (min-width: #{$breakpoint-sm})",
 );
 
 @mixin mq($breakpoint: mobile) {
@@ -156,48 +155,48 @@ $breakpoints: (
 }
 
 // Width Rule
-$--content-width-xs: 320px;
-$--content-width-sm: 640px;
-$--content-width-md: 1024px;
-$--content-width-xl: 1280px;
+$content-width-xs: 320px;
+$content-width-sm: 640px;
+$content-width-md: 1024px;
+$content-width-xl: 1280px;
 
 //*============ Component Style Rule ============*//
 
 // Color Rule
-$--color-primary: $--color-primary-100;
-$--color-primary-tint: $--color-primary-tint-100;
-$--color-primary-shade: $--color-primary-shade-100;
+$color-primary: $color-primary-100;
+$color-primary-tint: $color-primary-tint-100;
+$color-primary-shade: $color-primary-shade-100;
 
-$--color-dark: $--color-black-100;
-$--color-light: $--color-white-100;
-$--color-neutral: $--color-grayscale-060;
-$--color-attention: $--color-attention-100;
+$color-dark: $color-dark-100;
+$color-light: $color-white-100;
+$color-neutral: $color-grayscale-060;
+$color-attention: $color-attention-100;
 
 // font-Size Rule
-$--font-size-caption: $--font-size-sm; // 12px
-$--font-size-paragraph: $--font-size-md; // 14px
-$--font-size-body: $--font-size-lg; // 16px
-$--font-size-heading: $--font-size-h2; // 24px
+$font-size-caption: $font-size-sm; // 12px
+$font-size-paragraph: $font-size-md; // 14px
+$font-size-body: $font-size-lg; // 16px
+$font-size-heading: $font-size-h2; // 24px
 
 // line-height Rule
-$--line-height-caption: $--line-height-md; // 1.6
-$--line-height-paragraph: $--line-height-md; // 1.6
-$--line-height-body: $--line-height-sm; // 1.4
-$--line-height-heading: $--line-height-md; // 1.6
+$line-height-caption: $line-height-md; // 1.6
+$line-height-paragraph: $line-height-md; // 1.6
+$line-height-body: $line-height-sm; // 1.4
+$line-height-heading: $line-height-md; // 1.6
 
 // Shadow Rule
-$--shadow-drawerModal: 0 0 16px 0 $--color-black-050;
+$shadow-drawerModal: 0 0 16px 0 $color-dark-050;
 
 // Divider Rule
-$--divider-light: $--color-grayscale-030;
-$--divider-dark: $--color-grayscale-060;
+$divider-light: $color-grayscale-030;
+$divider-dark: $color-grayscale-060;
 
 // Border Rule
-$--border-light: $--color-grayscale-030;
-$--border-dark: $--color-grayscale-060;
+$border-light: $color-grayscale-030;
+$border-dark: $color-grayscale-060;
 
 // hover Opacity Rule
-$--hover-opacity: 0.6;
+$hover-opacity: 0.6;
 
 // Width Rule
-$--sidebar-width: 184px;
+$sidebar-width: 184px;

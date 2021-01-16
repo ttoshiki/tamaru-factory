@@ -1,3 +1,5 @@
+@use '../variables';
+
 *,
 *::after,
 *::before {
@@ -5,18 +7,18 @@
 }
 
 html {
-  font-size: $--font-size-md;
+  font-size: variables.$font-size-md;
 }
 
 body {
   margin: 0;
-  font-family: $--font-family-ja;
-  font-size: $--font-size-md;
-  line-height: $--line-height-xs;
-  color: $--color-dark;
-  background-color: $--color-dark;
+  font-family: variables.$font-family-ja;
+  font-size: variables.$font-size-md;
+  line-height: variables.$line-height-xs;
+  color: variables.$color-dark;
+  background-color: variables.$color-dark;
 }
 
 strong {
-  font-weight: $--font-weight-bd;
+  font-weight: variables.$font-weight-bd;
 }

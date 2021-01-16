@@ -20,6 +20,9 @@
         </div>
       </div>
     </div>
+    <div class="home__scrollbar" ref="scrollbar" id="scrollbar">
+      <div class="home__scrollbarHandle" ref="scrollbarHandle" id="scrollbarHandle"></div>
+    </div>
   </div>
 </template>
 
@@ -28,15 +31,21 @@ import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 
 export default {
-  name: 'tfHome',
+  name: 'Home',
+  data: function() {
+    return {
+      scrollItem: 4
+    }
+  },
   methods: {
     horizontalScroll() {
-      const sections = gsap.utils.toArray('.home__worksItem')
+      const sections = '.home__worksWrapper'
 
       gsap.registerPlugin(ScrollTrigger)
 
       gsap.to(sections, {
-        xPercent: -100 * (sections.length - 1),
+        xPercent: -60,
+        // xPercent: -100 * (sections.length - 1),
         ease: 'none',
         scrollTrigger: {
           trigger: '.home',
@@ -50,20 +59,39 @@ export default {
             delay: 0
           },
           // Base vertical scrolling on how wide the container is so it feels more natural.
-          end: () => '+=' + this.$el.querySelector('.home__worksWrapper').offsetWidth / 4
+          end: () =>
+            '+=' + this.$el.querySelector('.home__worksWrapper').offsetWidth / this.scrollItem
         }
+      })
+    },
+    calculateScrollbarWidth() {
+      this.scrollbarWidth = this.$refs.scrollbar.clientWidth + ((window.innerWidth / 100) * 5.5) / 3
+    },
+    calculateScrollbarHandleWidth() {
+      console.log('scrollbarwidth', this.scrollbarWidth)
+      this.$refs.scrollbarHandle.style.width = this.scrollbarWidth / this.scrollItem + 'px'
+    },
+    moveScrollbar() {
+      window.addEventListener('scroll', () => {
+        const scrollRatio =
+          (window.pageYOffset / this.scrollbarWidth) * 100 -
+          (window.pageYOffset / this.scrollbarWidth / this.scrollItem) * 100
+        console.log(scrollRatio)
+        this.$refs.scrollbarHandle.style.left = scrollRatio + '%'
       })
     }
   },
   mounted() {
+    this.calculateScrollbarWidth()
+    this.calculateScrollbarHandleWidth()
     this.horizontalScroll()
+    this.moveScrollbar()
   }
 }
 </script>
 
 <style lang="scss">
-@import '../styles/_variables';
-@import '../styles/foundation/_base';
+@use '../styles/variables';
 
 .home {
   position: absolute;
@@ -77,9 +105,9 @@ export default {
   &__scroll {
     position: relative;
     display: block;
-    width: 100%;
+    width: calc(100% - 96px);
     height: auto;
-    margin: 80px 0 0;
+    margin: 96px 0 0;
     overflow: hidden;
   }
 
@@ -87,7 +115,8 @@ export default {
     display: flex;
     flex-wrap: nowrap;
     width: 400vw;
-    height: 80vh;
+    height: 36vw;
+    max-height: 600px;
     padding: 0;
     overflow: hidden;
   }
@@ -106,12 +135,30 @@ export default {
     }
 
     &:first-child {
-      margin-left: 48px;
+      margin-left: 0;
     }
 
     &:last-child {
-      margin-right: 0;
+      margin-right: 48px;
     }
+  }
+
+  &__scrollbar {
+    position: relative;
+    left: 0;
+    width: calc(100% - 96px);
+    height: 1px;
+    margin-top: clamp(48px, 7vw, 64px);
+    background-color: variables.$color-dark-060;
+  }
+
+  &__scrollbarHandle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    background-color: variables.$color-primary-100;
+    transition: all 0.1s;
   }
 }
 </style>
