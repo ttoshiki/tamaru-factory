@@ -58,6 +58,7 @@ export default {
   display: flex;
   padding: 0;
   font-family: variables.$font-family-en;
+  list-style: none;
 }
 
 .AppMenuItem {
@@ -66,14 +67,9 @@ export default {
   &:not(:first-child) {
     margin-left: variables.$spacing-8x;
   }
-
-  a {
-    color: variables.$color-light;
-    text-decoration: none;
-  }
 }
 
 .AppContent {
-  margin: variables.$spacing-16x variables.$spacing-12x;
+  margin: variables.$spacing-16x variables.$spacing-12x 0;
 }
 </style>

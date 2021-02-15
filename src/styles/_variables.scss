@@ -35,7 +35,7 @@ $font-size-h2: 40px; // 見出しサイズ
 $font-size-h1: 48px;
 
 $font-weight-md: 400;
-$font-weight-bd: 600;
+$font-weight-bd: 500;
 
 $font-family-ja: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
   "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo,
@@ -181,7 +181,7 @@ $font-size-heading: $font-size-h2; // 24px
 // line-height Rule
 $line-height-caption: $line-height-md; // 1.6
 $line-height-paragraph: $line-height-md; // 1.6
-$line-height-body: $line-height-sm; // 1.4
+$line-height-body: $line-height-md; // 1.4
 $line-height-heading: $line-height-md; // 1.6
 
 // Shadow Rule

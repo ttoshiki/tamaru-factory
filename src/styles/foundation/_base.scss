@@ -14,11 +14,25 @@ body {
   margin: 0;
   font-family: variables.$font-family-ja;
   font-size: variables.$font-size-md;
-  line-height: variables.$line-height-xs;
-  color: variables.$color-dark;
+  line-height: variables.$line-height-body;
+  color: variables.$color-light;
   background-color: variables.$color-dark;
+}
+
+a {
+  color: variables.$color-light;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 strong {
   font-weight: variables.$font-weight-bd;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
 }
